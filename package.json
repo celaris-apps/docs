@@ -1,0 +1,35 @@
+{
+  "name": "celaris-docs",
+  "version": "1.0.0",
+  "description": "Documentation for Celaris",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celaris-apps/docs.git"
+  },
+  "keywords": [
+    "vitepress",
+    "docs",
+    "celaris",
+    "c++",
+    "web",
+    "vite",
+    "documentation"
+  ],
+  "author": "Graham Coulby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/celaris-apps/docs/issues"
+  },
+  "homepage": "https://github.com/celaris-apps/docs#readme",
+  "devDependencies": {
+    "vitepress": "^1.3.4"
+  }
+}
