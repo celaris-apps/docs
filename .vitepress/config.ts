@@ -3,10 +3,10 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [
-    ['meta', { name: 'og:title', href: 'Celaris' }],
-    ['meta', { name: 'og:description', href: 'Documentation for the Celaris Framework' }],
-    ['meta', { name: 'og:image', href: 'https://celaris.cc/apple-touch-icon.png' }],
-    ['meta', { name: 'og:url', href: 'https://celaris.cc/' }],
+    ['meta', { property: 'og:title', href: 'Celaris' }],
+    ['meta', { property: 'og:description', href: 'Documentation for the Celaris Framework' }],
+    ['meta', { property: 'og:image', href: 'https://celaris.cc/apple-touch-icon.png' }],
+    ['meta', { property: 'og:url', href: 'https://celaris.cc/' }],
   ],
   title: 'Celaris',
   description: 'Documentation for the Celaris Framework',
