@@ -4,7 +4,7 @@ layout: home
 
 hero:
   image:
-    src: assets/celaris.svg
+    src: /images/celaris.svg
     alt: Celaris
   name: "Celaris"
   tagline: "Build C++ desktop applications with a modern web frontend."
