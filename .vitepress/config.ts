@@ -2,6 +2,12 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [
+    ['meta', { name: 'og:title', href: 'Celaris' }],
+    ['meta', { name: 'og:description', href: 'Documentation for the Celaris Framework' }],
+    ['meta', { name: 'og:image', href: 'https://celaris.cc/apple-touch-icon.png' }],
+    ['meta', { name: 'og:url', href: 'https://celaris.cc/' }],
+  ],
   title: 'Celaris',
   description: 'Documentation for the Celaris Framework',
   themeConfig: {
