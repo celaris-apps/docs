@@ -5,7 +5,7 @@ export default defineConfig({
   title: 'Celaris',
   description: 'Documentation for the Celaris Framework',
   themeConfig: {
-    logo: 'assets/celaris.svg',
+    logo: '/images/celaris.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
