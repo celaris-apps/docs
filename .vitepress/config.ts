@@ -1,7 +1,14 @@
 import { defineConfig } from 'vitepress'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  markdown: {
+    config(md) {
+      md.use(tabsMarkdownPlugin)
+    },
+  },
   head: [
     ['meta', { property: 'og:title', href: 'Celaris' }],
     ['meta', { property: 'og:description', href: 'Documentation for the Celaris Framework' }],

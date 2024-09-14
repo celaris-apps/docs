@@ -37,10 +37,65 @@ Coming soon
 
 
 ### Configuring Linux
-::: info
-Coming soon
+
+There are several development dependencies required for developing, building and releasing Celaris projects. For example, a C++ compiler, CMake (for C++) and webkit2gtk for the webview engine. These dependencies will be installed in different ways depending on your linux distribution.
+
+:::tabs
+== Debian
+
+```bash
+sudo apt update
+sudo apt install libwebkit2gtk-4.0-dev \
+    build-essential \
+    curl \
+    wget \
+    file \
+    libssl-dev \
+    libgtk-3-dev \
+    libayatana-appindicator3-dev \
+    librsvg2-dev \
+    cmake
+```
+
+== Arch
+
+```bash
+sudo pacman -Syu
+sudo pacman -S --needed \
+    webkit2gtk \
+    base-devel \
+    curl \
+    wget \
+    file \
+    openssl \
+    appmenu-gtk-module \
+    gtk3 \
+    libappindicator-gtk3 \
+    librsvg \
+    libvips \
+    cmake
+```
+
+== Fedora
+
+```bash
+sudo dnf check-update
+sudo dnf install webkit2gtk4.0-devel \
+    openssl-devel \
+    curl \
+    wget \
+    file \
+    libappindicator-gtk3-devel \
+    librsvg2-devel \
+    cmake
+sudo dnf group install "C Development Tools and Libraries"
+```
+
 :::
 
+::: info
+If you use a distribution not mentioned here, please submit specific instructions for how you would install the above packages on your distribution as an [issue on github](https://github.com/celaris-apps/docs/issues)
+:::
 
 
 
@@ -58,3 +113,20 @@ After installation, confirm Node.js is properly set up by opening a terminal or 
 node -v
 npm -v
 ```
+
+::: warning
+On linux (possibly macOS) if you use `sudo apt install npm` you will likely get an older version of node installed. It is recommended to install following the instructions in the link above!.
+
+If you have already used this command, run the following command to undo this:
+
+```bash
+sudo apt remove npm -y && sudo apt remove nodejs -y
+```
+
+and check the packages are removed: 
+
+```bash 
+node -v
+npm -v
+```
+:::
