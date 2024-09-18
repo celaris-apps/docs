@@ -167,6 +167,8 @@ If you use a distribution not mentioned here, please submit specific instruction
 
 #### Configuring MacOS 
 
-::: info
-Coming soon
-:::
+CLang can be installed on MacOS with a single command. 
+
+```bash
+xcode-select --install
+```

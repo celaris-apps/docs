@@ -30,6 +30,7 @@ export default defineConfig({
         text: 'Getting Started',
         items: [
           { text: 'Prerequisites', link: 'guides/getting-started/prerequisites' },
+          { text: 'Quick Start', link: 'guides/getting-started/quick-start' },
           // { text: 'Installation', link: 'getting-started/installation' },
           // { text: 'Configuration', link: 'getting-started/configuration' },
           // { text: 'Usage', link: 'getting-started/usage' },
