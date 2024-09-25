@@ -12,5 +12,5 @@ As detailed throughout the documentation, Celaris is still in its early stages o
 
 I never anticipated Celaris to become a full-fledged framework. It was initially created as a learning exercise to understand how Tauri works. However, the project has gained some traction, and I hope that one day it will become a viable alternative to existing frameworks.
 
-However, Celaris will not be able to continue development without community support and contributions. If you are interested in contributing to the project, please refer to the [Contributing Guide](/contributing).
+However, Celaris will not be able to continue development without community support and contributions. If you are interested in contributing to the project, please refer to the [Contributing Guide](/guides/contributing/contributing-to-celaris).
 :::
