@@ -172,3 +172,10 @@ CLang can be installed on MacOS with a single command.
 ```bash
 xcode-select --install
 ```
+
+This will install all of the command line tools for building various types of applications on MacOS. This includes Clang.
+
+
+##### Install CMake
+
+coming soon

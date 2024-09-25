@@ -31,12 +31,21 @@ export default defineConfig({
         items: [
           { text: 'Prerequisites', link: 'guides/getting-started/prerequisites' },
           { text: 'Quick Start', link: 'guides/getting-started/quick-start' },
+          { text: 'Project Structure', link: 'guides/getting-started/project-structure' },
           // { text: 'Installation', link: 'getting-started/installation' },
           // { text: 'Configuration', link: 'getting-started/configuration' },
           // { text: 'Usage', link: 'getting-started/usage' },
           // { text: 'Markdown Examples', link: 'examples/markdown-examples' },
           // { text: 'Runtime API Examples', link: 'examples/api-examples' },
         ],
+      },
+      {
+        text: 'Development',
+        items: [{ text: 'Development Cycle', link: 'guides/development/development-cycle' }],
+      },
+      {
+        text: 'Features',
+        items: [{ text: 'Default Template', link: 'guides/features/default-template' }],
       },
     ],
 

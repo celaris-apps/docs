@@ -1,5 +1,7 @@
 # Quick Start
 
+## Run the installer
+
 Once you have installed the required dependencies for your system (see [Prerequisites](https://celaris.cc/guides/getting-started/prerequisites)), you will be able to run the following command to build a Celaris Project. 
 
 ::: tip QUICK START COMMAND
@@ -11,7 +13,7 @@ You can use qualified directory paths such as `.` or `../` if you wish here.
 
 :::
 
-# Setup Process
+## Setup Process
  
 There are two stages to the setup process. The first requires minimal intervention. You will first be prompted to choose your framework of choice. 
 
@@ -21,7 +23,7 @@ This will fetch a custom Vite template designed to interact with the Celaris bac
 
 After selecting those options the build script will automate the rest of the process and will fetch the required templates and repositories to scaffold your application.
 
-# Run your app
+## Run your app for the first time
 
 To run your newly scaffolded project perform the following actions
 
@@ -29,6 +31,8 @@ To run your newly scaffolded project perform the following actions
 cd <directory>
 npm run celaris -- dev --no-build
 ```
+
+## Run your app normally 
 
 ::: info NOTE
 
