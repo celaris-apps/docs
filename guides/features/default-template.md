@@ -16,53 +16,21 @@ When you first load your Celaris project you will presented with a webview that 
 
 ### Frontend to Backend Communication
 
-You can see a text input field and a button. The text input field is used to send a message to the backend, and the button is used to send the message. The backend will then respond with a message that will be displayed in the webview.
+You can see a text input field and a button. The text input field is used to send a message to the backend, and the button is used to send the message. The backend will then respond with a message that will be displayed in the webview. This process is done through binding.
 
-#### Binding
-
-The frontend communicates with the backend using a binding system. The frontend sends a message to the backend, and the backend responds with a message. The frontend then displays the message in the webview. A default example of this binding system is shown in the image above where the frontend interacts with the 'greet' binding. 
-
-##### Greet Binding
-
-::: tabs
-
-== C++ Backend
-
-```cpp
-Celaris c = Celaris();
-// Example of a binding that hooks the frontend greet function
-c.bind("greet", [&](const std::string &req) -> std::string
-        {
-            json response;
-            auto jsonreq = json::parse(req);
-            if (jsonreq.size() != 1)
-            {
-                response["message"] = "Invalid request";
-            }
-            else
-            {
-                response["message"] = "Hello " + jsonreq[0].get<std::string>() + ", You have been greeted from C++";
-            }
-            return response.dump(); });
-c.run();
-```
-
-== Vue
-```javascript
-const greetMsg = ref('')
-const name = ref('')
-
-async function greet() {
-  window.greet(name.value).then((res) => {
-    greetMsg.value = res.message
-  })
-}
-```
-
+::: tip See More!
+View the [Binding](/guides/features/binding) guide for more information on how to create bindings.
 :::
+
 
 ## Backend to Frontend Communication
 
 By pressing F12, or right-clicking and selecting `Inspect`, you can open the developer tools and see the console output. This will show you the communication between the frontend and the backend.
 
-![default-template-dev-panel](/images/guides/features/default-template-dev-panel.png)
+![dev-panel](/images/guides/features/dev-panel.png)
+
+Backend to frontend communication is done through task scheduling. The backend can schedule tasks to be run in the background, which can also post messages to the frontend. This is done through the standard JavaScript `window.postMessage` functionality.
+
+::: tip See More!
+View the [Task Scheduling](/guides/features/task-scheduling) guide for more information on how to create tasks.
+:::

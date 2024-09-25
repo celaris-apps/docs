@@ -25,29 +25,53 @@ export default defineConfig({
       { text: 'Guides', link: 'guides/getting-started/prerequisites' },
     ],
 
-    sidebar: [
-      {
-        text: 'Getting Started',
-        items: [
-          { text: 'Prerequisites', link: 'guides/getting-started/prerequisites' },
-          { text: 'Quick Start', link: 'guides/getting-started/quick-start' },
-          { text: 'Project Structure', link: 'guides/getting-started/project-structure' },
-          // { text: 'Installation', link: 'getting-started/installation' },
-          // { text: 'Configuration', link: 'getting-started/configuration' },
-          // { text: 'Usage', link: 'getting-started/usage' },
-          // { text: 'Markdown Examples', link: 'examples/markdown-examples' },
-          // { text: 'Runtime API Examples', link: 'examples/api-examples' },
-        ],
-      },
-      {
-        text: 'Development',
-        items: [{ text: 'Development Cycle', link: 'guides/development/development-cycle' }],
-      },
-      {
-        text: 'Features',
-        items: [{ text: 'Default Template', link: 'guides/features/default-template' }],
-      },
-    ],
+    sidebar: {
+      '/guides/': [
+        {
+          text: 'Introduction',
+          items: [
+            { text: 'What is Celaris?', link: '/guides/introduction/what-is-celaris' },
+            { text: 'Why Celaris?', link: '/guides/introduction/why-celaris' },
+            { text: 'How Celaris Works', link: '/guides/introduction/how-celaris-works' },
+            { text: 'Who is Celaris For?', link: '/guides/introduction/who-is-celaris-for' },
+            { text: 'Roadmap', link: '/guides/introduction/roadmap' },
+          ],
+        },
+        {
+          text: 'Getting Started',
+          items: [
+            { text: 'Prerequisites', link: '/guides/getting-started/prerequisites' },
+            { text: 'Quick Start', link: '/guides/getting-started/quick-start' },
+            { text: 'Project Structure', link: '/guides/getting-started/project-structure' },
+          ],
+        },
+        {
+          text: 'Development',
+          items: [{ text: 'Development Cycle', link: '/guides/development/development-cycle' }],
+        },
+        {
+          text: 'Features',
+          items: [
+            { text: 'Default Template', link: '/guides/features/default-template' },
+            { text: 'Binding', link: '/guides/features/binding' },
+            { text: 'Task Scheduling', link: '/guides/features/task-scheduling' },
+          ],
+        },
+        {
+          text: 'Contributing',
+          items: [{ text: 'Contributing to Celaris', link: '/guides/contributing/contributing-to-celaris' }],
+        },
+      ],
+      '/roadmap/': [
+        {
+          text: 'Roadmap',
+          items: [
+            { text: 'Version 1.0', link: 'roadmap/version-1.0' },
+            { text: 'Version 2.0', link: 'roadmap/version-2.0' },
+          ],
+        },
+      ],
+    },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/celaris-apps' }],
   },
