@@ -43,7 +43,4 @@ Once the development server is running, you can also access the frontend applica
 
 ## Live Reloading
 
-The development server currently only supports live reloading for the frontend application. Any changes made to the frontend code will automatically trigger a reload of the application in the browser.
-
-> **Feature Coming Soon**: Live reloading for the C++ backend is currently in development and will be available in a future release.
-
+The development environment supports live reloading for both the frontend and backend applications. This means that any changes you make to the frontend or backend code will automatically be reflected in the application without the need to restart the server.

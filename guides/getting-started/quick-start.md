@@ -29,14 +29,14 @@ To run your newly scaffolded project perform the following actions
 
 ```bash
 cd <directory>
-npm run celaris -- dev --no-build
+npm run celaris dev -- --no-build
 ```
 
 ## Run your app normally 
 
 ::: info NOTE
 
-`npm create celaris@latest` runs a build command as part of the setup process. The build command is also baked into `npm run celaris dev`. Running the command above skips that second build on the first run. To enable it run the normal dev command
+`npm create celaris@latest` runs a cmake, build and test commands as part of the setup process. These commands are also baked into `npm run celaris dev`. Therefore, running the command above skips that second build on the first run. To enable it run the normal dev command
 
 ```bash
 npm run celaris dev

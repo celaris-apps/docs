@@ -7,6 +7,7 @@
 **Seamless Communication:** Establish efficient communication between the C++ backend and the frontend through message passing.
 **Cross-Platform Support:** Build applications that run on Windows, macOS, and Linux.
 **Developer-Friendly:** Simplify development with tools like create-celaris and celaris-cli for scaffolding and managing projects.
+**Hot Reload:** Enjoy live reloading during development for quick feedback and iteration.
 
 ## Architecture Overview
 Celaris consists of two main components:
